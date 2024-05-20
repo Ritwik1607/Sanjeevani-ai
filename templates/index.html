@@ -18,11 +18,11 @@
       href="{{ url_for('static', filename='css/index.css') }}"
     />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <title>Gemini ChatBot</title>
+    <title>hanuman ChatBot</title>
   </head>
   <body>
     <div class="sidebar" id="sidebar">
-      <h2 class="sidebar-title">Gemini ChatBot</h2>
+      <h2 class="sidebar-title">hanuman ChatBot</h2>
       <nav class="navigation">
         <a href="/gemini">Home</a>
         <a href="/about">About</a>
@@ -41,11 +41,12 @@
       <div class="message">
         <p>You:</p>
         <p class="user-message">{{ entry['input'] }}</p>
-        <p>Gemini:</p>
+        <p>hanuman:</p>
         <p class="gemini-response">{{ entry['result'] }}</p>
       </div>
       {% endfor %}
     </div>
+
     <form class="element" method="POST" onsubmit="sendMessage(event)">
       <textarea
         type="text"
